@@ -8,7 +8,7 @@ from behave import *
 
 @when('When I launch a search for all stores')
 def step_impl(context,name,price,strengh,usage):
-for price<1000 and strengh>6 and c>6:
+for price<1000 and strengh>6 and usage>6:
    assert_that(context.name, equal_to(product))
    assert_that(context.number1, equal_to(price))
    assert_that(context.number2, equal_to(strengh))
